@@ -18,3 +18,6 @@ function volume_sphere(event) {
     // Round to 4 decimal places and display result
     volumeOutput.value = volume.toFixed(4);
 }
+window.onload = function() {
+    document.getElementById('MyForm').onsubmit = volume_sphere;
+};
